@@ -9,7 +9,6 @@ import java.util.List;
 @Entity
 
 public class Screen extends BaseModel{
-    private int id;
     private String name;
     @OneToMany(mappedBy = "screen")
     private List<Seat> seats;

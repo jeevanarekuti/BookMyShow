@@ -19,5 +19,5 @@ public class Seat extends BaseModel {
     int bottomRightX;
     int bottomRightY;
     @ManyToOne
-    Screen screen;
+    private Screen screen;
 }

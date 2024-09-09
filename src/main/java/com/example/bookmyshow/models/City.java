@@ -11,9 +11,7 @@ import java.util.List;
 @Entity
 public class City extends BaseModel{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+
     private String name;
     @OneToMany(mappedBy = "city")
     private List<Theatre>theatres;
